@@ -12,7 +12,11 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Map from "./pages/Map";
 import { auth } from './database/firebase';
+import mapboxgl from 'mapbox-gl';
 
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 function PrivateRoute({ component: Component, authenticated, ...rest }) {
   return (
       <Route
