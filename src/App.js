@@ -13,7 +13,7 @@ import Login from "./pages/Login";
 import Map from "./pages/Map";
 import { auth } from './database/firebase';
 import mapboxgl from 'mapbox-gl';
-
+//dfgg
 // @ts-ignore
 // eslint-disable-next-line import/no-webpack-loader-syntax
 mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
